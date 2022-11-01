@@ -10,6 +10,7 @@ import {
   ShoppingCartIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
+import Head from "next/head";
 
 type Props = {};
 const Header = (props: Props) => {
@@ -38,7 +39,7 @@ const Header = (props: Props) => {
           <p className="headerLinks">Watchlist</p>
           <p className="headerLinks">My eBay</p>
 
-          <Link href="/addItem" className="flex items-center hover:link">
+          <Link href="/additem" className="flex items-center hover:link">
             Add to Inventory
             <ChevronDownIcon className="h-4" />
           </Link>
