@@ -6,6 +6,8 @@ import {
 } from "@thirdweb-dev/react";
 import { ListingType } from "@thirdweb-dev/sdk";
 import { BanknotesIcon, ClockIcon } from "@heroicons/react/24/outline";
+import Head from "next/head";
+
 const Home = () => {
   const { contract } = useContract(
     process.env.NEXT_PUBLIC_NFT_MARKET_LISTING,
@@ -16,6 +18,11 @@ const Home = () => {
 
   console.log(listings);
   return (
+    <>
+    <Head>
+      <link rel="shortcut icon" href="https://pages.ebay.com/favicon.ico" type="image/x-icon" />
+      <title>Ebay Clone App - Electronics, Cars, Fashion, Collectibles & More | eBay</title>
+    </Head>
     <div className=".">
       <Header />
 
@@ -76,6 +83,7 @@ const Home = () => {
         )}
       </main>
     </div>
+  </>
   );
 };
 
